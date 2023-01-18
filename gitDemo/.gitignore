@@ -34,5 +34,8 @@ build/
 
 ### eclipse ###
 .metadata/
+.classpath
+.project
+.settings/
 target
 
