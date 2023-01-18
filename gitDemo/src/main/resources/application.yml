@@ -1,0 +1,9 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: gitDemo
+
+kls:
+  welcome: "康录爽，欢迎来到 Git 的世界"
