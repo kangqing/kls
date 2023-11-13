@@ -51,6 +51,5 @@ public class ListTest {
             User value = map.get(key);
             System.out.println(value);
         }
-
     }
 }
