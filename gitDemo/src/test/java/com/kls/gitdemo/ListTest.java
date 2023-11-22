@@ -1,6 +1,7 @@
 package com.kls.gitdemo;
 
 import com.kls.gitdemo.entity.User;
+import lombok.Data;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -51,5 +52,24 @@ public class ListTest {
             User value = map.get(key);
             System.out.println(value);
         }
+    }
+
+    @Test
+    void list() {
+        List<Cat> list = new ArrayList<>();
+        final Cat cat = new Cat();
+        cat.setId(1);
+        cat.setName("1");
+        list.add(cat);
+        cat.setName("2");
+        list.add(cat);
+        list.forEach(System.out::println);
+
+    }
+
+    @Data
+    class Cat {
+        private Integer id;
+        private String name;
     }
 }
